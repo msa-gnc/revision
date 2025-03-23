@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruge+Boogie&family=Sixtyfour+Convergence&display=swap');
+
+@font-face{
+    font-family: "şuşi";
+    src:url("./reign.otf")
+}
+
+html{
+    font-size: 20px;
+}
+
+/* 1.Yöntem Css varolan fontlarını kullanma */
+.cssFont{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:crimson;
+}
+
+/* 2.google font ile harici font kullanımı */
+.googleFont{
+    font-family: "Ruge Boogie", cursive;
+    color:rgb(7, 128, 126);
+}
+
+.googleFontImport{
+    font-family: "Sixtyfour Convergence", sans-serif;
+   
+}
+
+.hariciFont{
+font-family: "şuşi", 'Times New Roman', Times, serif;
+}
+
+
+.baba{
+    font-size: 20px;
+    /* parent element olduğundan dolayı 1em=20px olmuş oldu */
+}
+
+.fontSize{
+    font-size:8x ;
+    /* em rem */
+    /* baba divin font-size 20px olduğu için 1.5 em 30px eşit oldu */
+    font-size: 0.5em;
+    /* rem: root em => en baba divin(root:html) font-size göre hareket edilir 
+    html etiketine font-size 8 px verdiğimiz için 1rem = 8px*/
+    font-size:1.5rem ;
+    font-weight:bolder;
+    font-variant: small-caps;
+
+}
+img{
+    width: 10rem;
+}
