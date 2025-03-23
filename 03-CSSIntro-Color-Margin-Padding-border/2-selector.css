@@ -1,0 +1,33 @@
+/* universal selector - evrensel seçici */
+*{
+    font-size: 25px;
+    background-color: bisque;
+}
+
+
+/* Element Seçici */
+h1{
+    background-color: rgb(42, 128, 157);
+    padding:10px;
+    border:2px solid rgb(60, 56, 56);
+}
+
+/* Class seçici
+her elemente birden fazla class verilebilir 
+Birde fazla elemente aynı class verilebilir*/
+.box{
+    width: 150px;
+    background-color: chocolate;
+    padding:20px;
+    margin:10px;
+    border:2px  solid black;
+
+}
+
+.small_box{
+    background-color: rgb(13, 221, 76);
+}
+
+#idSecici{
+    background-color: brown;
+}
