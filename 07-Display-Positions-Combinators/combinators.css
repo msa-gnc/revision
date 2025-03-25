@@ -1,0 +1,77 @@
+div p {
+    /* background-color: olive; */
+}
+
+.container div p{
+    /* background-color: teal; */
+}
+
+
+.p2 + div{ /*! p2'den hemen sonra gelen div*/
+    background-color: rebeccapurple;
+}
+
+
+div + p {/*! div'den hemen sonra gelen p*/
+    /* background-color: fuchsia; */
+}
+
+div ~ p {/*! div'den hemen sonra gelen bütün p'ler*/
+    /* background-color: darkorange; */
+}
+
+div > p {
+    /* background-color: crimson; */
+}
+
+a[target="_blank"]{
+    background-color: orange;
+}
+
+h2[title="baslik1"]{
+    background-color: crimson;
+}
+
+p[ title="paragraf1"]{
+    background-color: skyblue;
+}
+p[ title="paragraf2"]::first-line{
+    color: red;
+}
+p[ title="paragraf2"]::first-letter{
+    color: black;
+    font-size: 3rem;
+}
+
+.out{
+    border: 2px solid red;
+    width: 10rem;
+    height: 10rem;
+    margin: 50px auto;
+    border-radius: 50%;
+     text-align: center; 
+    padding-top: 60px; 
+    box-sizing: border-box;
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.out:hover{
+    outline: 5px dashed purple;
+    outline-offset: .5rem;
+}
+
+.cw{
+    border: 5px solid red;
+    width: 20rem;
+    margin: 50px auto;
+    text-align: center;
+    outline: 15px solid purple;
+    outline-offset: 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: orange;
+
+}
