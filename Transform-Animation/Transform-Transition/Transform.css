@@ -1,0 +1,109 @@
+.yazi {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1.5rem auto;
+  width: 50vw;
+}
+
+/* ---------------------------------- */
+/*          TRANSFORM ROTATE          */
+/* ---------------------------------- */
+
+.yazi1 {
+  background-color: darkcyan;
+  transform: rotateX(180deg);
+}
+
+.yazi2 {
+  background-color: fuchsia;
+  transform: rotateY(180deg);
+}
+
+.yazi3 {
+  background-color: orange;
+  position: relative;
+  z-index: 2;
+}
+
+.yazi3:active {
+  transform: rotate(-45deg);
+  background-color: red;
+  transform-origin: 40%;
+}
+
+/* ---------------------------------- */
+/*           TRANSFORM SCALE          */
+/* ---------------------------------- */
+/*! boyutlandırma için kullanılır */
+
+
+.yazi4 {
+  background-color: teal;
+  transform: scaleX(1.5);
+}
+
+.yazi5 {
+  background-color: olive;
+  transform: scaleY(2);
+}
+
+.yazi6 {
+  background-color: deeppink;
+  
+}
+
+.yazi6:active{
+    background-color: crimson;
+    transform: scale(1.5) rotate(-45deg);
+    /* transform: rotate(45deg); */
+}
+
+img{
+    transform: skewX(180deg);
+    transform: skewY(180deg);
+    transform: skew(30deg, 45deg);
+}
+
+
+/* ---------------------------------- */
+/*              TRANSLATE             */
+/* ---------------------------------- */
+
+.box{
+    background-color: teal;
+    width: 100px;
+    height: 50px;
+    margin: 2px;
+
+}
+
+.x{
+    transition: all 2s ease-in-out;
+    transition-timing-function: cubic-bezier(1,-0.88, 0.38, 5.17)
+}
+
+.x:active{
+    transform: translateX(350px);
+    background-color: fuchsia;
+}
+
+.y{
+    transition: all 1s ease-out;
+}
+
+.y:active{
+    transform: translateY(90px);
+    background-color: yellowgreen;
+}
+
+
+
+.xy{
+    /* transition: transform 5s ease-in-out;
+    transition-delay: 1s; */
+}
+
+.xy:active{
+    transform: translate(103px, -52px);
+    background-color: chocolate;
+}
