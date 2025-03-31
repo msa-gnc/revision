@@ -1,0 +1,15 @@
+.custom{
+    background-color: teal !important;
+}
+
+.card{
+    box-shadow: 5px 5px 10px black;
+}
+
+.card .btn{
+    background-color: fuchsia;
+}
+
+.navbar{
+    background-color: fuchsia !important;
+}
