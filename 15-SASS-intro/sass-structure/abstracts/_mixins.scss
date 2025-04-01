@@ -1,0 +1,10 @@
+@mixin myBox($parametre1, $paramertre2: blue) {
+    background-color: $parametre1;
+    width: 25%;
+    height: 15rem;
+    border-radius: 1rem;
+    color: $paramertre2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
