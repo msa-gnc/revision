@@ -1,28 +1,38 @@
 "use strict"
-// npm init -y
-// npm  i express
-// npm i dotenv
-// npm i express-async-errors
-// npm i cookie-session
-// npm i mongoose
+/*
+    $ npm i express dotenv mongoose express-async-errors
+    $ npm i cookie-session
+    $ npm i jsonwebtoken
+*/
+
+const express = require("express");
+const app = express();
 
 require("dotenv").config();
 const PORT = process.env.PORT || 8000;
 
-const express = require("express");
-const app = express();
 
 /* //?------------------------------------------------------------------ */
 // Middlewares
 require("express-async-errors")
 
-// //* Parse Data
+ //Parse Data
 app.use(express.json());
 
-//
+//Session-Cookies
+const session = require('cookie-session');
 
-//* DB Connection:
+app.use(session({
+    secret: process.env.SECRET_KEY,
+}))
+
+// DB Connection:
 require("./src/configs/dbConnection")
+
+// Query Handler:
+app.use(require('./src/middlewares/queryHandler'))
+
+
 
 /* //?------------------------------------------------------------------ */
 
@@ -32,6 +42,8 @@ app.all("/", (req,res)=>{
         message:"WELCOME TO PERSONNEL API"
     })
 })
+
+app.use("/departments",require("./src/routes/department"))
 
 /* //?------------------------------------------------------------------ */
 
