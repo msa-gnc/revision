@@ -42,8 +42,11 @@ app.all("/", (req,res)=>{
         message:"WELCOME TO PERSONNEL API"
     })
 })
-
+// Department Route
 app.use("/departments",require("./src/routes/department"))
+
+// Personnel Route
+app.use("/personnels",require("./src/routes/personnel"))
 
 /* //?------------------------------------------------------------------ */
 
@@ -57,3 +60,7 @@ app.listen(PORT, () =>
   console.log("Server Runnig at http://127.0.0.1:" + PORT)
 );
 
+
+/* //?------------------------------------------------------------------ */
+//! Syncronization : Run it only once.
+// require('./src/helpers/sync')()
