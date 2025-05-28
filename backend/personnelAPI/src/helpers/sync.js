@@ -34,7 +34,7 @@ module.exports = async function() {
                     password: "1234",
                     firstName: "firstName",
                     lastName: "lastName",
-                    phone: "12345678911",
+                    phone: "12345678900",
                     email: "test" + (value[0] + i) + "@site.com",
                     title: "title",
                     salary: 2500,
